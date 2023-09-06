@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <h1>Numerical Methods</h1>
+        <ul>
+            <li><a href="/index.html">Iteration Method</a></li>
+            <li><a href="/bisection.html">Fixed Point Method</a></li>
+        </ul>
+    </div>
+    <p></p>
+    <div class="ibox">
+        <label for="">EQN F(x)</label>
+        <input type="text" id="i1eqn">
+        <label for="">Starting Number X0</label>
+        <input type="number" id="i1num">
+        <label for="">Gap(Dx0)</label>
+        <input type="number" id="i1gap">
+        <button type="submit" id="i1btn" onclick="getVal()">Check Root</button>
+        <button type="submit" id="i1erase" onclick="eraser()">Clear</button>
+
+    </div>
+    <div class="container1">
+        <h1 class="heading">Iteration Method Table</h1>
+    </div>
+    <table class="table" cellspacing="0">
+        <tbody id="parent">
+            <tr>
+                <td class="td1">INPUT X</td>
+                <td class="td1">OUTPUT Y</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ------------------------------------------------------ -->
+    <!-- <canvas id="myChart" style="width:100%;max-width:700px"></canvas> -->
+    </div>
+
+    <script src="Imethod.js"></script>
+
+
+</body>
+
+</html>
